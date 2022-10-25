@@ -42,13 +42,13 @@ html {
 .main-nav ul li {
   float: left;
   margin-left: 45px;
-  font-size: 18px;
+  font-size: 14px;
 }
 .main-nav ul li a {
   text-decoration: none;
   color: #fff;
 }
-.banner img {
+.home-section img {
   width: 100%;
   max-width: 100%;
   vertical-align: top;
