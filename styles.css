@@ -1,0 +1,71 @@
+body,
+html {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#header {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.8) 0%,
+    rgba(17, 80, 110, 0.8) 35%,
+    rgba(0, 212, 255, 0.8) 100%
+  );
+  padding: 10px 0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.logoLanyev {
+  width: 20%;
+}
+
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.main-nav ul li {
+  float: left;
+  margin-left: 45px;
+  font-size: 18px;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+.banner img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+}
+
+.about-section,
+.experience-section,
+.blog-section,
+.contact-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-section {
+  background: #0f2b39;
+}
+.experience-section {
+  background: #21536c;
+}
