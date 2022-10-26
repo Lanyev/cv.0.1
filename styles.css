@@ -22,18 +22,15 @@ html {
   top: 0;
 }
 .container {
-  width: 90%;
+  width: 100%;
   padding-right: 10%;
   margin: 0 auto;
   text-align: justify;
 }
 
-.perfilFoto img {
-  padding-left: 10%;
-  width: 80%;
-}
-
-.experienceFoto img {
+.perfilFoto img,
+.experienceFoto img,
+.blogPhoto img {
   padding-left: 10%;
   width: 80%;
 }
@@ -73,11 +70,14 @@ html {
 
 .about-section,
 .experience-section,
-.blog-section,
-.contact-section {
+.blog-section {
   height: 70vh;
   display: flex;
   align-items: center;
+}
+
+#about {
+  color: #fff;
 }
 
 .about-section {
@@ -90,5 +90,92 @@ html {
   background: #417e9c;
 }
 .contact-section {
-  background: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/images/cityLogo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+.wrapper {
+  width: 400px;
+  height: 500px;
+  color: black;
+  padding: 50px 30px;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.9);
+}
+.wrapper::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.9);
+  filter: blur();
+}
+.wrapper p {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.wrapper input {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+textarea {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 50px;
+  color: #fff;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wrapper a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  padding: 10px;
+  background: #21536c;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+#footer {
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 0.5) 0%,
+    rgba(17, 80, 110, 0.5) 35%,
+    rgba(0, 212, 255, 0.5) 100%
+  );
+  height: 15px;
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
 }
