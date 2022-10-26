@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
 body,
 html {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -9,9 +11,9 @@ html {
   background: rgb(2, 0, 36);
   background: linear-gradient(
     90deg,
-    rgba(2, 0, 36, 0.8) 0%,
-    rgba(17, 80, 110, 0.8) 35%,
-    rgba(0, 212, 255, 0.8) 100%
+    rgba(2, 0, 36, 0.5) 0%,
+    rgba(17, 80, 110, 0.5) 35%,
+    rgba(0, 212, 255, 0.5) 100%
   );
   padding: 10px 0;
   width: 100%;
@@ -20,15 +22,29 @@ html {
   top: 0;
 }
 .container {
-  width: 70%;
+  width: 90%;
+  padding-right: 10%;
   margin: 0 auto;
+  text-align: justify;
+}
+
+.perfilFoto img {
+  padding-left: 10%;
+  width: 80%;
+}
+
+.experienceFoto img {
+  padding-left: 10%;
+  width: 80%;
 }
 
 .logoLanyev {
   width: 20%;
 }
 
-#header .container {
+#header .nav-bar {
+  padding-right: 10%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +67,7 @@ html {
 .home-section img {
   width: 100%;
   max-width: 100%;
+  object-fit: contain;
   vertical-align: top;
 }
 
@@ -58,7 +75,7 @@ html {
 .experience-section,
 .blog-section,
 .contact-section {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
 }
@@ -68,4 +85,10 @@ html {
 }
 .experience-section {
   background: #21536c;
+}
+.blog-section {
+  background: #417e9c;
+}
+.contact-section {
+  background: #fff;
 }
